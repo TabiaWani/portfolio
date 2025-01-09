@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", () => {
         navLinks.classList.toggle("show");
     });
 
-    // Smooth Scrolling
+    
     const sections = document.querySelectorAll('section[id]');
     const navLinks = document.querySelectorAll('header .nav-links a');
 
