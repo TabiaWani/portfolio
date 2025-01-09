@@ -1,8 +1,8 @@
 /* Root Variables for Theme */
 :root {
-    --primary-color: #4CAF50;
-    --secondary-color: #212121;
-    --background-color: #c29d9d8e;
+    --primary-color: #4CAF50; /* Keep this or choose your preferred color */
+    --secondary-color: #212121; /* Keep this or choose your preferred color */
+    --background-color: #bea1a1; /* Lightened background for better contrast */
     --text-color: #333;
     --white: #fff;
     --font-family: 'Poppins', sans-serif;
@@ -27,7 +27,6 @@ body {
     max-width: 1200px;
     margin: 0 auto;
 }
-
 
 /* Header */
 header {
@@ -108,6 +107,27 @@ header .btn:hover {
     background: #388E3C;
 }
 
+/* About Section */
+#about {
+    text-align: center;
+    padding: 3rem 0;
+}
+
+.about-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2rem;
+}
+
+.profile-image {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 2rem;
+}
+
 /* Section Titles */
 section h2 {
     font-size: 2rem;
@@ -173,25 +193,32 @@ section h2 {
     padding: 3rem 0;
 }
 
-#contact h2 {
+.contact-info {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+.contact-item {
+    margin: 1rem;
+    text-align: center;
+}
+
+.contact-item i {
     font-size: 2rem;
-    margin-bottom: 1rem;
-    color: var(--primary-color);
+    margin-bottom: 0.5rem;
+    color: var(--primary-color); 
 }
 
-#contact p {
-    font-size: 1rem;
-    margin: 0.5rem 0;
-}
-
-#contact a {
-    color: var(--black);
+.contact-item a {
+    color: var(--secondary-color);
     text-decoration: none;
     font-weight: bold;
     transition: color 0.3s;
 }
 
-#contact a:hover {
+.contact-item a:hover {
     color: var(--white);
     background: var(--primary-color);
     padding: 0.2rem 0.5rem;
