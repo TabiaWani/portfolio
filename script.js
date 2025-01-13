@@ -1,15 +1,15 @@
 document.addEventListener("DOMContentLoaded", () => {
     const hamburger = document.querySelector(".hamburger");
-    const navLinks = document.querySelector(".nav-links");
+    const navLinks = document.querySelector(".nav-links");  
+    const sections = document.querySelectorAll('section[id]');  
+    const navLinkItems = document.querySelectorAll('header .nav-links a');  
 
+   
     hamburger.addEventListener("click", () => {
         navLinks.classList.toggle("show");
     });
 
-    
-    const sections = document.querySelectorAll('section[id]');
-    const navLinks = document.querySelectorAll('header .nav-links a');
-
+   
     window.addEventListener('scroll', () => {
         let current = '';
 
@@ -21,10 +21,10 @@ document.addEventListener("DOMContentLoaded", () => {
             }
         });
 
-        navLinks.forEach(a => {
-            a.classList.remove('active');
-            if (a.classList.contains(current)) {
-                a.classList.add('active');
+        navLinkItems.forEach(link => {
+            link.classList.remove('active');
+            if (link.classList.contains(current)) {
+                link.classList.add('active');
             }
         });
     });
