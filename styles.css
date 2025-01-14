@@ -157,14 +157,19 @@ header {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-/* Responsive Styles */
+/* General Responsive Styles */
 @media (max-width: 768px) {
+    .hero {
+        padding: 2rem 1rem; /* Reduce padding on smaller screens */
+        text-align: center;
+    }
+
     .hero h2 {
-        font-size: 2.5rem;
+        font-size: 2.2rem;  /* Adjust font size for smaller screens */
     }
 
     .hero p {
-        font-size: 1.1rem;
+        font-size: 1rem;
         margin-bottom: 1.5rem;
     }
 
@@ -178,7 +183,45 @@ header {
 
     .btn {
         font-size: 1rem;
+        padding: 0.8rem 1.5rem; /* Adjust button padding for small screens */
+        max-width: 200px; /* Ensure buttons are not too wide */
+        margin: 0.5rem auto; /* Center buttons and add spacing between them */
+    }
+
+    .hero-buttons {
+        display: flex;
+        flex-wrap: wrap; /* Allow buttons to wrap on smaller screens */
+        justify-content: center; /* Center buttons */
+        gap: 1rem; /* Ensure there’s some space between the buttons */
+    }
+
+    .hero .btn {
+        font-size: 1rem;
         padding: 0.8rem 2rem;
+        width: 100%; /* Make the buttons full width on smaller screens */
+    }
+}
+
+/* Additional small screen adjustments */
+@media (max-width: 480px) {
+    .hero h2 {
+        font-size: 1.8rem;
+    }
+
+    .hero p {
+        font-size: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    .btn {
+        font-size: 0.9rem;
+        padding: 0.8rem 1.5rem; /* Smaller padding for tiny screens */
+    }
+
+    .hero .btn {
+        font-size: 0.9rem;
+        padding: 0.6rem 1.2rem; /* Further reduce button size on very small screens */
+        width: 100%; /* Make buttons take up the full width */
     }
 }
 
