@@ -545,9 +545,9 @@ header {
     }
 
     .contact-item {
-        width: 100%;
-        max-width: 350px;
-        height: 220px;
+        width: 100px;
+        max-width: 100px;
+        height: 100px;
     }
 }
 
