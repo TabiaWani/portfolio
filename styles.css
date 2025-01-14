@@ -299,10 +299,33 @@ header {
 }
 
 .projects-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    display: flex;
+    flex-direction: column;
     gap: 2rem;
     margin-top: 2rem;
+}
+
+/* Each Project Item (Card + Description) */
+.project-item {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Two columns: Card | Description */
+    gap: 1.5rem;
+    align-items: center;
+}
+
+/* Alternating Layout */
+.project-item:nth-child(odd) {
+    grid-template-columns: 1fr 1fr; /* Card on left, description on right */
+}
+
+.project-item:nth-child(even) {
+    grid-template-columns: 1fr 1fr; /* Card on right, description on left */
+    direction: rtl; /* Flips the layout */
+}
+
+.project-item:nth-child(even) .project-card,
+.project-item:nth-child(even) .project-description {
+    direction: ltr; /* Resets text direction for content */
 }
 
 /* Project Card Styles */
@@ -316,14 +339,16 @@ header {
     flex-direction: column;
     justify-content: space-between;
     position: relative;
-    will-change: transform; /* Helps optimize the animation */
+    will-change: transform;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 /* Hover Effect: Tilt */
 .project-card:hover {
     transform: rotateY(10deg) rotateX(5deg); /* Tilt in 3D space */
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
-    filter: brightness(-1.1); /* Slightly brightens the card on hover */
+    filter: brightness(1.1); /* Brightens the card on hover */
 }
 
 /* Header Section */
@@ -370,7 +395,33 @@ header {
 }
 
 .project-link:hover {
-    background-color: var(--primary-color);  
+    background-color: var(--primary-color);
+}
+
+/* Project Description Box */
+.project-description {
+    border-radius: 12px;
+    padding: 1.5rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    color: #333;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+/* Responsive Design: Stacking for smaller screens */
+@media (max-width: 768px) {
+    .project-item {
+        grid-template-columns: 1fr; /* Stack items vertically */
+    }
+
+    .project-description {
+        margin-top: 1rem; /* Add space between stacked elements */
+    }
 }
 
 /* Skills Section */
