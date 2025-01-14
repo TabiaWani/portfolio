@@ -540,7 +540,7 @@ header {
 /* Smaller screens */
 @media (max-width: 768px) {
     .contact-info {
-        flex-direction: column;
+        flex-direction: row;
         gap: 1.5rem;
     }
 
