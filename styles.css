@@ -537,20 +537,6 @@ header {
     color: var(--primary-color);  /* Accent icon color on hover */
 }
 
-/* Smaller screens */
-@media (max-width: 768px) {
-    .contact-info {
-        flex-direction: row;
-        gap: 1.5rem;
-    }
-
-    .contact-item {
-        width: 100px;
-        max-width: 100px;
-        height: 100px;
-    }
-}
-
 
 /* Footer */
 footer {
