@@ -466,76 +466,95 @@ header {
 }
 
 /* Contact Section */
-
 #contact {
-    padding-bottom: 2rem;
+    padding: 4rem 1rem;
     text-align: center;
+    color: #333;
 }
 
 #contact h2 {
     font-size: 2.5rem;
     font-weight: 700;
-    margin-bottom: 3rem;
-    color: var(--primary-color);
+    margin-bottom: 1.5rem;
+    color: #4CAF50;
     text-transform: uppercase;
-    letter-spacing: 1px;
+    letter-spacing: 1.5px;
+}
+
+#contact p {
+    font-size: 1rem;
+    margin-bottom: 2rem;
+    color: #666;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .contact-info {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 2rem; /* space between contact items */
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 2rem;
     margin-top: 2rem;
 }
 
 .contact-item {
     background: #52726f5d;
-    border-radius: 10px;
-    padding: 2rem;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    padding: 2rem 1rem;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    width: 150px;
     text-align: center;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 150px;
-    position: relative;
 }
 
 .contact-item:hover {
     transform: translateY(-10px);
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
 }
 
 .contact-item i {
-    font-size: 2.5rem;
+    font-size: 3rem;
     margin-bottom: 1rem;
-    color: var(--primary-color); 
-    transition: color 0.3s ease;
+    color: #4CAF50;
 }
 
 .contact-item a {
-    color: var(--secondary-color);
+    color: #333;
     text-decoration: none;
-    font-weight: bold;
-    font-size: 1.1rem;
+    font-weight: 600;
+    font-size: 1rem;
     margin-top: 0.5rem;
     transition: all 0.3s ease;
 }
 
 .contact-item a:hover {
-    color: var(--white);
-    background: var(--primary-color);
-    padding: 0.4rem 0.8rem;
-    border-radius: 20px;
+    color: #fff;
+    background: #4CAF50;
+    padding: 0.5rem 1rem;
+    border-radius: 25px;
 }
 
-.contact-item i:hover {
-    color: var(--primary-color);  /* Accent icon color on hover */
+@media (max-width: 768px) {
+    #contact h2 {
+        font-size: 2rem;
+    }
+
+    #contact p {
+        font-size: 0.9rem;
+    }
+
+    .contact-item i {
+        font-size: 2.5rem;
+    }
+
+    .contact-item a {
+        font-size: 0.9rem;
+    }
 }
+
 
 
 /* Footer */
