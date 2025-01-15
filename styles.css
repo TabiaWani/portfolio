@@ -1,9 +1,9 @@
 /* Root Variables for Theme */
 :root {
-    --primary-color: #009688;  /* Muted teal */
-    --secondary-color: #233241;  /* Darker gray for text */
-    --background-color: #bce1eb; /* Light grayish-blue for backgrounds */
-    --text-color: #34495E;  /* Dark grayish color for text */
+    --primary-color: #009688;  
+    --secondary-color: #233241;  
+    --background-color: #bce1eb; 
+    --text-color: #34495E;  
     --white: #ffffff;
     --font-family: 'Poppins', sans-serif;
 }
@@ -25,14 +25,14 @@ body {
 
 .container {
     width: 90%;
-    max-width: 1400px; /* Adjusted for larger screens */
+    max-width: 1400px; 
     margin: 0 auto;
 }
 
 /* Top Bar */
 .top-bar {
-    background-color: #34495e; /* Darker, modern color */
-    color: #bdc3c7; /* Light gray for the text */
+    background-color: #34495e;
+    color: #bdc3c7; 
     text-align: left;
     padding: 15px;
     font-size: 16px;
@@ -61,8 +61,8 @@ header {
 
 /* Hero Section */
 .hero {
-    background: var(--background-color);  /* Match background with the rest of the site */
-    color: var(--text-color);  /* Use the text color defined globally */
+    background: var(--background-color);  
+    color: var(--text-color);  
     padding: 3rem 1rem;
     border-radius: 15px;
     box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
@@ -71,10 +71,33 @@ header {
 }
 
 .hero h2 {
-    font-size: 2.5rem;
+    font-size: 3.5rem; 
     margin: 1rem 0;
-    color: var(--primary-color);  /* Hero heading can use the primary color for contrast */
+    color: transparent; 
+    background-image: linear-gradient(45deg, #6effd3, #7873f5); 
+    background-clip: text; 
+    -webkit-background-clip: text; 
+    -webkit-text-fill-color: transparent; 
+    font-family: 'Poppins', sans-serif; 
+    font-weight: 700; 
+    letter-spacing: 2px; 
+    text-transform: uppercase; 
+    text-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); 
+    animation: fade-in 2s ease-in-out; 
 }
+
+/* Keyframes for fade-in animation */
+@keyframes fade-in {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px); 
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0); 
+    }
+}
+
 
 .hero p {
     font-size: 1.2rem;
@@ -101,12 +124,12 @@ header {
     font-weight: 600;
     font-size: 1.1rem;
     color: var(--white);
-    transition: color 0.3s ease, transform 0.3s ease; /* Smooth color and scale transition */
+    transition: color 0.3s ease, transform 0.3s ease; 
 }
 
 .nav-links a:hover {
     color: var(--primary-color);
-    transform: scale(1.05); /* Slight scaling effect for hover */
+    transform: scale(1.05); 
 }
 
 /* Add underline animation for hover */
@@ -136,7 +159,7 @@ header {
 
 .hero .btn {
     padding: 1rem 2.5rem;
-    background-color: var(--primary-color);  /* Use the primary color */
+    background-color: var(--primary-color);  
     color: var(--white);
     text-decoration: none;
     border-radius: 30px;
@@ -148,7 +171,7 @@ header {
 }
 
 .hero .btn:hover {
-    background-color: var(--secondary-color); /* Secondary color for hover effect */
+    background-color: var(--secondary-color); 
     transform: translateY(-5px);
 }
 
@@ -160,12 +183,12 @@ header {
 /* General Responsive Styles */
 @media (max-width: 768px) {
     .hero {
-        padding: 2rem 1rem; /* Reduce padding on smaller screens */
+        padding: 2rem 1rem; 
         text-align: center;
     }
 
     .hero h2 {
-        font-size: 2.2rem;  /* Adjust font size for smaller screens */
+        font-size: 2.2rem;  
     }
 
     .hero p {
@@ -183,22 +206,22 @@ header {
 
     .btn {
         font-size: 1rem;
-        padding: 0.8rem 1.5rem; /* Adjust button padding for small screens */
-        max-width: 200px; /* Ensure buttons are not too wide */
-        margin: 0.5rem auto; /* Center buttons and add spacing between them */
+        padding: 0.8rem 1.5rem; 
+        max-width: 200px; 
+        margin: 0.5rem auto; 
     }
 
     .hero-buttons {
         display: flex;
-        flex-wrap: wrap; /* Allow buttons to wrap on smaller screens */
-        justify-content: center; /* Center buttons */
-        gap: 1rem; /* Ensure there’s some space between the buttons */
+        flex-wrap: wrap; 
+        justify-content: center; 
+        gap: 1rem; 
     }
 
     .hero .btn {
         font-size: 1rem;
         padding: 0.8rem 2rem;
-        width: 100%; /* Make the buttons full width on smaller screens */
+        width: 100%; 
     }
 }
 
@@ -215,20 +238,21 @@ header {
 
     .btn {
         font-size: 0.9rem;
-        padding: 0.8rem 1.5rem; /* Smaller padding for tiny screens */
+        padding: 0.8rem 1.5rem; 
     }
 
     .hero .btn {
         font-size: 0.9rem;
-        padding: 0.6rem 1.2rem; /* Further reduce button size on very small screens */
-        width: 100%; /* Make buttons take up the full width */
+        padding: 0.6rem 1.2rem; 
+        width: 100%; 
     }
 }
 
+
 /* About Section */
 .about-section {
-    background: var(--background-color);  /* Match background with the rest of the site */
-    color: var(--text-color);  /* Use the text color defined globally */
+    background: var(--background-color);  
+    color: var(--text-color);  
     padding: 3rem 1rem;
     border-radius: 15px;
     box-shadow: 3px 4px 15px rgba(0, 0, 0, 0.1);
@@ -244,6 +268,7 @@ header {
     text-transform: uppercase;
     letter-spacing: 1px;
     text-align: center;
+    border-bottom: 3px solid var(--primary-color);
 }
 
 .about-content {
@@ -286,6 +311,7 @@ header {
     }
 }
 
+
 /* Projects Section */
 #projects h2 {
     font-size: 2.5rem;
@@ -296,41 +322,45 @@ header {
     text-transform: uppercase;
     letter-spacing: 1px;
     text-align: center;
+    border-bottom: 3px solid var(--primary-color); 
+    padding-bottom: 0.5rem;
 }
 
+/* Projects Grid */
 .projects-grid {
     display: flex;
     flex-direction: column;
     gap: 2rem;
     margin-top: 2rem;
+    padding: 0 1rem; /
 }
 
 /* Each Project Item (Card + Description) */
 .project-item {
     display: grid;
-    grid-template-columns: 1fr 1fr; /* Two columns: Card | Description */
+    grid-template-columns: 1fr 1fr; 
     gap: 1.5rem;
     align-items: center;
 }
 
-/* Alternating Layout */
+/* Alternating Layout for Cards */
 .project-item:nth-child(odd) {
-    grid-template-columns: 1fr 1fr; /* Card on left, description on right */
+    grid-template-columns: 1fr 1fr; 
 }
 
 .project-item:nth-child(even) {
-    grid-template-columns: 1fr 1fr; /* Card on right, description on left */
-    direction: rtl; /* Flips the layout */
+    grid-template-columns: 1fr 1fr; 
+    direction: rtl; 
 }
 
 .project-item:nth-child(even) .project-card,
 .project-item:nth-child(even) .project-description {
-    direction: ltr; /* Resets text direction for content */
+    direction: ltr; 
 }
 
 /* Project Card Styles */
 .project-card {
-    background: #52726f5d;
+    background: rgba(82, 114, 111, 0.36); 
     border-radius: 12px;
     overflow: hidden;
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
@@ -338,23 +368,20 @@ header {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    position: relative;
-    will-change: transform;
-    margin-top: 10px;
-    margin-bottom: 10px;
+    margin: 0 1rem;
 }
 
-/* Hover Effect: Tilt */
+/* Hover Effect */
 .project-card:hover {
-    transform: rotateY(10deg) rotateX(5deg); /* Tilt in 3D space */
+    transform: translateY(-5px); 
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
-    filter: brightness(1.1); /* Brightens the card on hover */
+    filter: brightness(1.1); 
 }
 
-/* Header Section */
+/* Card Header */
 .project-card .card-header {
     padding: 1rem;
-    background: #52726f5d;
+    background: rgba(82, 114, 111, 0.5); /
     border-bottom: 2px solid #eee;
 }
 
@@ -362,9 +389,10 @@ header {
     font-size: 1.6rem;
     color: #333;
     margin: 0;
+    text-align: center;
 }
 
-/* Body Section */
+/* Card Body */
 .project-card .card-body {
     padding: 1.5rem;
     font-size: 1rem;
@@ -372,14 +400,15 @@ header {
     flex-grow: 1;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: center;
+    text-align: center;
 }
 
-/* Footer Section */
+/* Card Footer */
 .project-card .card-footer {
     padding: 1rem;
     text-align: center;
-    background: #52726f5d;
+    background: rgba(82, 114, 111, 0.36);
 }
 
 /* Project Link Style */
@@ -398,31 +427,34 @@ header {
     background-color: var(--primary-color);
 }
 
-/* Project Description Box */
+/* Project Description */
 .project-description {
     border-radius: 12px;
     padding: 1.5rem;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
     color: #333;
     font-size: 1rem;
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
-    margin-top: 10px;
-    margin-bottom: 10px;
+    background: #e6eeee;
+    margin: 0 1rem;
 }
 
-/* Responsive Design: Stacking for smaller screens */
+/* Responsive Design */
 @media (max-width: 768px) {
     .project-item {
-        grid-template-columns: 1fr; /* Stack items vertically */
+        grid-template-columns: 1fr; 
     }
 
     .project-description {
-        margin-top: 1rem; /* Add space between stacked elements */
+        margin-top: 1rem; 
     }
 }
+
+
+
 
 /* Skills Section */
 #skills {
@@ -437,6 +469,7 @@ header {
     color: var(--primary-color);
     text-transform: uppercase;
     letter-spacing: 1px;
+    border-bottom: 3px solid var(--primary-color);
 }
 
 .skills-grid {
@@ -484,7 +517,7 @@ header {
     position: absolute;
     left: 0;
     top: 0;
-    color: #1c8a2e; /* Green checkmark color */
+    color: #1c8a2e; /
 }
 
 .skill-card ul li:last-child {
@@ -530,6 +563,7 @@ header {
     color: var(--primary-color);
     text-transform: uppercase;
     letter-spacing: 1.5px;
+    border-bottom: 3px solid var(--primary-color);
 }
 
 #contact p {
@@ -607,19 +641,18 @@ header {
 }
 
 
-
 /* Footer */
 footer {
     text-align: center;
     padding: 0.5rem 1rem;
-    background: linear-gradient(45deg, #2c3e50, #5078a1); /* Dark gradient background */
+    background: linear-gradient(45deg, #2c3e50, #5078a1); 
     color: #fff;
     font-size: 1rem;
     font-weight: 400;
     position: relative;
     overflow: hidden;
-    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1); /* subtle shadow for depth */
-    animation: fadeIn 2s ease-out; /* Adding a fade-in animation */
+    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1); 
+    animation: fadeIn 2s ease-out; 
 }
 
 footer p {
@@ -633,7 +666,7 @@ footer p {
 }
 
 footer .heart-icon {
-    color: #e74c3c; /* Heart color */
+    color: #e74c3c; 
     font-size: 1.5rem;
     margin-left: 0.5rem;
     transition: color 0.3s ease;
@@ -655,7 +688,7 @@ footer .heart-icon {
 /* Responsive Design for Mobile Devices */
 @media (max-width: 768px) {
     footer {
-        font-size: 1rem; /* Slightly smaller font size on mobile */
+        font-size: 1rem; 
     }
 
     footer p {
@@ -669,22 +702,22 @@ footer .heart-icon {
     .about-content {
         flex-direction: column;
         align-items: center;
-        padding: 2rem; /* Add some padding for better spacing */
+        padding: 2rem; 
     }
 
     .about-text {
         font-size: 1.1rem;
         text-align: center;
-        margin-bottom: 1.5rem; /* Spacing for readability */
+        margin-bottom: 1.5rem; 
     }
 
     .about-image img {
-        width: 200px; /* Adjust size for smaller screens */
+        width: 200px; 
         height: 200px;
     }
 
     .projects-grid {
-        grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); /* Reduce min-width for projects */
+        grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); 
         gap: 1.5rem;
     }
 
@@ -693,28 +726,28 @@ footer .heart-icon {
     }
 
     .skills-grid {
-        grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); /* Ensure skills don't take too much space */
+        grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); 
         gap: 1.5rem;
     }
 }
 
 @media (max-width: 768px) {
     .projects-grid {
-        grid-template-columns: 1fr; /* Stack project cards in one column */
+        grid-template-columns: 1fr; 
     }
 
     .skills-grid {
-        grid-template-columns: 1fr; /* Stack skills vertically */
+        grid-template-columns: 1fr; 
     }
 
     header .hero h2 {
         font-size: 2rem;
-        margin-bottom: 1rem; /* Ensure text has some margin on small screens */
+        margin-bottom: 1rem; 
     }
 
     header .btn {
         font-size: 0.9rem;
-        padding: 0.7rem 1.8rem; /* Adjust button padding */
+        padding: 0.7rem 1.8rem; 
     }
 
     footer {
@@ -723,12 +756,12 @@ footer .heart-icon {
     }
 
     .contact-item {
-        flex: 1 1 100%; /* Make each contact item stack on mobile */
-        margin-bottom: 1.5rem; /* Add spacing between contact items */
+        flex: 1 1 100%; 
+        margin-bottom: 1.5rem; 
     }
 
     .contact-info {
-        display: block; /* Stack contact items in a single column */
+        display: block; 
     }
 
     .about-section {
@@ -738,29 +771,29 @@ footer .heart-icon {
 
 @media (max-width: 600px) {
     header .hero h2 {
-        font-size: 1.8rem; /* Reduce font size for smaller devices */
+        font-size: 1.8rem; 
     }
 
     .projects-grid, .skills-grid {
-        grid-template-columns: 1fr; /* Stack projects and skills */
+        grid-template-columns: 1fr; 
     }
 
     .project-card {
         padding: 1rem;
-        margin: 0 1rem; /* Add spacing around cards */
+        margin: 0 1rem; 
     }
 
     .about-text {
-        font-size: 1.1rem; /* Make text a bit larger for readability */
+        font-size: 1.1rem; 
     }
 
     .about-image img {
-        width: 180px; /* Make image smaller on very small screens */
+        width: 180px; 
         height: 180px;
     }
 
     footer {
         padding: 1.2rem;
-        font-size: 0.85rem; /* Smaller font size for footer on mobile */
+        font-size: 0.85rem; 
     }
 }
