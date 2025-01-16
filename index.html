@@ -1,439 +1,240 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Shahid Ul Islam | Portfolio</title>
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
-    />
-    <link rel="stylesheet" href="styles.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
     <script defer src="script.js"></script>
-  </head>
-  <body>
-    <!-- Header -->
-    <header id="home" class="bg-light">
-      <nav class="navbar navbar-expand-lg bg-dark">
-        <div class="container">
-          <a class="navbar-brand text-white" href="#">My Portfolio</a>
-          <button
-            class="navbar-toggler bg-light"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarNav"
-            aria-controls="navbarNav"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav mx-auto">
-              <li class="nav-item">
-                <a class="nav-link text-white fs-4" href="#about">About Me</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link text-white fs-4" href="#projects"
-                  >Projects</a
-                >
-              </li>
-              <li class="nav-item">
-                <a class="nav-link text-white fs-4" href="#skills">Skills</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link text-white fs-4" href="#contact">Contact</a>
-              </li>
+</head>
+<body>
+
+    <div class="top-bar">
+        <p>Shahid Ul Islam | Portfolio</p>
+    </div>
+    
+    <header id="home">
+        <nav class="container">
+            <ul class="nav-links">
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
-          </div>
+        </nav>
+    
+        <div class="hero">
+            <h2>Hi, I'm Shahid Ul Islam</h2>
+            <p>
+                An Aspiring Data Scientist on a mission to transform data into meaningful insights and intelligent solutions. Fueled by a passion for AI, Machine Learning, and Data Analysis, I thrive on solving real-world challenges with innovative, data-driven strategies. Let's uncover the stories hidden in data and create impactful solutions together!
+            </p>
+            <div class="hero-buttons">
+                <a href="#projects" class="btn">View My Work</a>
+                <a href="resume.pdf" class="btn" download>Download Resume</a>
+                <a href="#contact" class="btn">Contact Me</a>
+            </div>
         </div>
-      </nav>
-
-      <div class="text-center">
-        <h2 class="display-4">Hi, I'm Shahid Ul Islam</h2>
-        <p class="lead">
-          An Aspiring Data Scientist on a mission to transform data into
-          meaningful insights and intelligent solutions.
-        </p>
-        <div class="mt-5">
-          <a href="#projects" class="btn btn-info btn-lg me-3">View My Work</a>
-          <a href="resume.pdf" class="btn btn-dark btn-lg me-3" download
-            >Download Resume</a
-          >
-          <a href="#contact" class="btn btn-success btn-lg">Get in Touch</a>
-        </div>
-      </div>
     </header>
+    
+    <main>
+        <section id="about" class="container about-section">
+            <h2>About Me</h2>
+            <div class="about-content">
+                <div class="about-image">
+                    <img src="shahid.png" alt="Shahid Ul Islam" class="profile-image">
+                </div>
+                <div class="about-text">
+                    <p>A Computer Science student fueled by a passion for Artificial Intelligence, Machine Learning, and Data Science. I thrive on crafting innovative solutions that bridge the gap between complex problems and real-world applications. From predictive analytics to natural language processing and deep learning, I love exploring the frontiers of cutting-edge technology.</p>
+                    <p>My journey so far has been an exciting blend of learning, building, and innovating. I've dived deep into diverse AI and Data Science applications—creating predictive models, building conversational AI, and unraveling insights from complex datasets. With every project, I aim to push boundaries and deliver impactful results.</p>
+                    <p>I’m driven by the excitement of tackling new challenges—whether it's solving complex problems or shaping the future through transformative AI-powered innovations. Join me on this journey where technology meets creativity, and together, let's unlock endless possibilities!</p>
+                </div>
+            </div>
+        </section>
+        
 
-    <!-- About Section -->
-    <section id="about" class="container py-5">
-      <h2 class="text-center mb-4">About Me</h2>
-      <div class="row align-items-center">
-        <div class="col-md-4 text-center">
-          <img
-            src="shahid.png"
-            alt="Shahid Ul Islam"
-            class="img-fluid rounded-circle"
-          />
-        </div>
-        <div class="col-md-8">
-          <p>
-            A Computer Science student fueled by a passion for Artificial
-            Intelligence, Machine Learning, and Data Science.
-          </p>
-          <p>
-            My journey so far has been an exciting blend of learning, building,
-            and innovating.
-          </p>
-          <p>
-            I’m driven by the excitement of tackling new challenges— whether
-            it's solving complex problems or shaping the future through
-            transformative AI-powered innovations.
-          </p>
-        </div>
-      </div>
-    </section>
+        <section id="projects" class="container">
+            <h2>Projects</h2>
+            <div class="projects-grid">
+                <div class="project-item">
+                    <div class="project-card">
+                        <div class="card-header">
+                            <h3>Medicine Review Categorization</h3>
+                        </div>
+                        <div class="card-body">
+                            <p>A machine learning-based web app that categorizes medicine reviews using uses, side effects, and manufacturer details.</p>
+                        </div>
+                        <div class="card-footer">
+                            <a href="https://github.com/Khanz9664/Medicine-Review-Categorization" target="_blank" class="project-link">View on GitHub</a>
+                        </div>
+                    </div>
+                    <div class="project-description">
+                        <p>Developed a machine learning-based web application to categorize medicine reviews into predefined classes (e.g., Positive, Negative, Neutral) based on user-provided inputs such as the medicine's uses, side effects, and manufacturer. The application provides valuable insights for pharmaceutical companies, healthcare professionals, and patients to analyze feedback effectively. (Python, Streamlit, Scikit-learn, Joblib, TF-IDF, Sparse Matrices).</p>
+                    </div>
+                </div>
+        
+                <div class="project-item">
+                    <div class="project-card">
+                        <div class="card-header">
+                            <h3>Early Breast Cancer Prediction</h3>
+                        </div>
+                        <div class="card-body">
+                            <p>A Machine Learning predictive model that assists in the early diagnosis of Breast Cancer based on a dataset of medical features.</p>
+                        </div>
+                        <div class="card-footer">
+                            <a href="https://github.com/Khanz9664/Breast-Cancer-Prediction" target="_blank" class="project-link">View on GitHub</a>
+                        </div>
+                    </div>
+                    <div class="project-description">
+                        <p>This project involves developing a machine learning model to predict whether a given tumor is malignant or benign based on input features. By leveraging publicly available datasets, such as the Breast Cancer Wisconsin (Diagnostic) Dataset, the goal is to assist healthcare professionals in early detection and diagnosis of breast cancer, potentially improving treatment outcomes and saving lives. (Python, NumPy, Pandas, Scikit-learn, Matplotlib, Seaborn, XGBoost, LightGBM).</p>
+                    </div>
+                </div>
+        
+                <div class="project-item">
+                    <div class="project-card">
+                        <div class="card-header">
+                            <h3>Chatbot - Movie Dialogs Dataset</h3>
+                        </div>
+                        <div class="card-body">
+                            <p>A conversational chatbot trained on the Cornell Movie Dialogs dataset to simulate human-like interactions.</p>
+                        </div>
+                        <div class="card-footer">
+                            <a href="https://github.com/Khanz9664/chatbot" target="_blank" class="project-link">View on GitHub</a>
+                        </div>
+                    </div>
+                    <div class="project-description">
+                        <p>This project involves creating an intelligent conversational chatbot using the Cornell Movie Dialogs dataset. The chatbot is designed to simulate human-like conversations by leveraging Natural Language Processing (NLP) techniques and sequence-to-sequence models. The Cornell dataset, rich in diverse movie dialogues, provides a wide range of conversational contexts, making the chatbot capable of responding to varied inputs with contextual relevance. (Python, NumPy, Pandas, NLTK, TensorFlow, Tkinter).</p>
+                    </div>
+                </div>
+        
+                <div class="project-item">
+                    <div class="project-card">
+                        <div class="card-header">
+                            <h3>Criminal Records Management</h3>
+                        </div>
+                        <div class="card-body">
+                            <p>A secure and efficient system for managing and tracking criminal records, enabling quick access to information for law enforcement agencies.</p>
+                        </div>
+                        <div class="card-footer">
+                            <a href="https://github.com/Khanz9664/criminal-records-system" target="_blank" class="project-link">View on GitHub</a>
+                        </div>
+                    </div>
+                    <div class="project-description">
+                        <p>The Criminal Records Management System (CRMS) is a comprehensive application designed to store, retrieve, and manage criminal records efficiently. This system is intended for law enforcement agencies, allowing authorized personnel to securely access and update records of individuals involved in criminal activities. By digitizing and organizing criminal data, the CRMS helps reduce manual paperwork, ensures easy retrieval of information, and improves the overall management and security of sensitive records. (HTML, CSS, PHP, SQL).</p>
+                    </div>
+                </div>
+        
+                <div class="project-item">
+                    <div class="project-card">
+                        <div class="card-header">
+                            <h3>House Price Prediction</h3>
+                        </div>
+                        <div class="card-body">
+                            <p>A predictive model to estimate house prices based on various features of properties using the Ames Housing dataset. (Python, Pandas, NumPy, Scikit-learn, Matplotlib, Seaborn).</p>
+                        </div>
+                        <div class="card-footer">
+                            <a href="https://github.com/Khanz9664/House-Price-Prediction" target="_blank" class="project-link">View on GitHub</a>
+                        </div>
+                    </div>
+                    <div class="project-description">
+                        <p>The House Price Prediction project aims to build a machine learning model that predicts house prices based on various features such as the size of the house, number of rooms, neighborhood, and more, using the Ames Housing dataset. This dataset, which includes 79 explanatory variables describing the characteristics of residential homes, serves as the foundation for training the model. The objective is to develop a robust, accurate model that can predict house prices in Ames, Iowa, and potentially be adapted to other real estate markets. (Python, Pandas, NumPy, Scikit-learn, Matplotlib).</p>
+                    </div>
+                </div>
+        
+                <div class="project-item">
+                    <div class="project-card">
+                        <div class="card-header">
+                            <h3>Exploratory Data Analysis-MovieLens Dataset</h3>
+                        </div>
+                        <div class="card-body">
+                            <p>An exploratory data analysis (EDA) and visualization project using the MovieLens dataset to uncover insights into movie ratings, and user preferences.</p>
+                        </div>
+                        <div class="card-footer">
+                            <a href="https://github.com/Khanz9664/Python-For-DataScience/tree/main/10.%20Exploratory%20Analysis%20and%20Visualization%20of%20MovieLens%20Dataset" target="_blank" class="project-link">View on GitHub</a>
+                        </div>
+                    </div>
+                    <div class="project-description">
+                        <p>This project involves performing Exploratory Data Analysis (EDA) and data visualization on the MovieLens dataset, which contains information about movies, ratings, genres, and users. The goal is to extract meaningful patterns, relationships, and trends from the dataset, such as the distribution of ratings, the most popular genres, and the preferences of users. Various visualization techniques will be used to present the insights effectively, enabling a deeper understanding of the data and how users interact with movies. (Python, Pandas, NumPy, Matplotlib, Seaborn, Plotly).</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        
+        
+        
+        
+        <section id="skills" class="container">
+            <h2>Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <h3>Languages</h3>
+                    <ul>
+                        <li>Python</li>
+                        <li>C/C++/C#</li>
+                        <li>HTML/CSS/JavaScript</li>
+                        <li>SQL</li>
+                    </ul>
+                </div>
+                <div class="skill-card">
+                    <h3>Libraries</h3>
+                    <ul>
+                        <li>Numpy/Pandas</li>
+                        <li>Matplotlib/Seaborn</li>
+                        <li>TensorFlow/Keras</li>
+                        <li>Scikit-learn</li>
+                    </ul>
+                </div>
+                <div class="skill-card">
+                    <h3>Tools</h3>
+                    <ul>
+                        <li>Jupyter Notebook</li>
+                        <li>VS Code</li>
+                        <li>Git/GitHub</li>
+                        <li>BigQuery</li>
+                        <li>Looker</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        
+        
 
-    <!-- Projects Section -->
-    <section id="projects" class="bg-light py-5">
-      <div class="container">
-        <h2 class="text-center mb-4">Projects</h2>
-        <div class="row g-4">
-          <div class="col-md-6 col-lg-6">
-            <div class="card h-100">
-              <div class="card-header">
-                <h5 class="card-title">Medicine Review Categorization</h5>
-              </div>
-              <div class="card-body">
-                <p>
-                  A machine learning-based web app that categorizes medicine
-                  reviews using uses, side effects, and manufacturer details.
-                </p>
-              </div>
-              <div class="card-footer d-flex justify-content-center">
-                <a
-                  href="https://github.com/Khanz9664/Medicine-Review-Categorization"
-                  target="_blank"
-                  class="btn btn-primary btn-sm"
-                  >View on GitHub</a
-                >
-              </div>
+        <section id="contact" class="container">
+            <h2>Contact Me</h2>
+            <p>Feel free to reach out through any of the platforms below!</p>
+            <div class="contact-info">
+                <div class="contact-item">
+                    <i class="fas fa-envelope"></i>
+                    <a href="mailto:shahid9664@gmail.com">Mail</a>
+                </div>
+                <div class="contact-item">
+                    <i class="fab fa-linkedin"></i>
+                    <a href="https://www.linkedin.com/in/shahid-ul-islam-13650998" target="_blank">LinkedIn</a>
+                </div>
+                <div class="contact-item">
+                    <i class="fab fa-github"></i>
+                    <a href="https://github.com/Khanz9664" target="_blank">GitHub</a>
+                </div>
+                <div class="contact-item">
+                    <i class="fab fa-whatsapp"></i>
+                    <a href="https://wa.me/+917780858125" target="_blank">WhatsApp</a>
+                </div>
+                <div class="contact-item">
+                    <i class="fab fa-instagram"></i>
+                    <a href="https://instagram.com/shaddy9664" target="_blank">Instagram</a>
+                </div>
             </div>
-          </div>
+        </section>
+               
+        
+    </main>
 
-          <div class="col-md-6 col-lg-6">
-            <div class="card h-100">
-              <div class="card-body">
-                <p>
-                  Developed a machine learning-based web application to
-                  categorize medicine reviews into predefined classes (e.g.,
-                  Positive, Negative, Neutral) based on user-provided inputs
-                  such as the medicine's uses, side effects, and manufacturer.
-                  The application provides valuable insights for pharmaceutical
-                  companies, healthcare professionals, and patients to analyze
-                  feedback effectively. (Python, Streamlit, Scikit-learn,
-                  Joblib, TF-IDF, Sparse Matrices).
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-md-6 col-lg-6">
-            <div class="card h-100">
-              <div class="card-header">
-                <h5 class="card-title">Early Breast Cancer Prediction</h5>
-              </div>
-              <div class="card-body">
-                <p>
-                  A Machine Learning predictive model that assists in the early
-                  diagnosis of Breast Cancer based on a dataset of medical
-                  features.
-                </p>
-              </div>
-              <div class="card-footer d-flex justify-content-center">
-                <a
-                  href="https://github.com/Khanz9664/Breast-Cancer-Prediction"
-                  target="_blank"
-                  class="btn btn-primary btn-sm"
-                  >View on GitHub</a
-                >
-              </div>
-            </div>
-          </div>
-
-          <div class="col-md-6 col-lg-6">
-            <div class="card h-100">
-              <div class="card-body">
-                <p>
-                  This project involves developing a machine learning model to
-                  predict whether a given tumor is malignant or benign based on
-                  input features. By leveraging publicly available datasets,
-                  such as the Breast Cancer Wisconsin (Diagnostic) Dataset, the
-                  goal is to assist healthcare professionals in early detection
-                  and diagnosis of breast cancer, potentially improving
-                  treatment outcomes and saving lives. (Python, NumPy, Pandas,
-                  Scikit-learn, Matplotlib, Seaborn, XGBoost, LightGBM).
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-md-6 col-lg-6">
-            <div class="card h-100">
-              <div class="card-header">
-                <h5 class="card-title">Chatbot - Movie Dialogs Dataset</h5>
-              </div>
-              <div class="card-body">
-                <p>
-                  A conversational chatbot trained on the Cornell Movie Dialogs
-                  dataset to simulate human-like interactions.
-                </p>
-              </div>
-              <div class="card-footer d-flex justify-content-center">
-                <a
-                  href="https://github.com/Khanz9664/chatbot"
-                  target="_blank"
-                  class="btn btn-primary btn-sm"
-                  >View on GitHub</a
-                >
-              </div>
-            </div>
-          </div>
-
-          <div class="col-md-6 col-lg-67">
-            <div class="card h-100">
-              <div class="card-body">
-                <p>
-                  This project involves creating an intelligent conversational
-                  chatbot using the Cornell Movie Dialogs dataset. The chatbot
-                  is designed to simulate human-like conversations by leveraging
-                  Natural Language Processing (NLP) techniques and
-                  sequence-to-sequence models. The Cornell dataset, rich in
-                  diverse movie dialogues, provides a wide range of
-                  conversational contexts, making the chatbot capable of
-                  responding to varied inputs with contextual relevance.
-                  (Python, NumPy, Pandas, NLTK, TensorFlow, Tkinter).
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6 col-lg-6">
-            <div class="card h-100">
-              <div class="card-header">
-                <h5 class="card-title">Criminal Records Management</h5>
-              </div>
-              <div class="card-body">
-                <p>
-                  A secure and efficient system for managing and tracking
-                  criminal records, enabling quick access to information for law
-                  enforcement agencies.
-                </p>
-              </div>
-              <div class="card-footer d-flex justify-content-center">
-                <a
-                  href="https://github.com/Khanz9664/criminal-records-system"
-                  target="_blank"
-                  class="btn btn-primary btn-sm"
-                  >View on GitHub</a
-                >
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6 col-lg-6">
-            <div class="card h-100">
-              <div class="card-body">
-                <p>
-                  The Criminal Records Management System (CRMS) is a
-                  comprehensive application designed to store, retrieve, and
-                  manage criminal records efficiently. This system is intended
-                  for law enforcement agencies, allowing authorized personnel to
-                  securely access and update records of individuals involved in
-                  criminal activities. By digitizing and organizing criminal
-                  data, the CRMS helps reduce manual paperwork, ensures easy
-                  retrieval of information, and improves the overall management
-                  and security of sensitive records. (HTML, CSS, PHP, SQL).
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6 col-lg-6">
-            <div class="card h-100">
-              <div class="card-header">
-                <h5 class="card-title">House Price Prediction</h5>
-              </div>
-              <div class="card-body">
-                <p>
-                  A predictive model to estimate house prices based on various
-                  features of properties using the Ames Housing dataset.
-                  (Python, Pandas, NumPy, Scikit-learn, Matplotlib, Seaborn).
-                </p>
-              </div>
-              <div class="card-footer d-flex justify-content-center">
-                <a
-                  href="https://github.com/Khanz9664/House-Price-Prediction"
-                  target="_blank"
-                  class="btn btn-primary btn-sm"
-                  >View on GitHub</a
-                >
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6 col-lg-6">
-            <div class="card h-100">
-              <div class="card-body">
-                <p>
-                  The House Price Prediction project aims to build a machine
-                  learning model that predicts house prices based on various
-                  features such as the size of the house, number of rooms,
-                  neighborhood, and more, using the Ames Housing dataset. This
-                  dataset, which includes 79 explanatory variables describing
-                  the characteristics of residential homes, serves as the
-                  foundation for training the model. The objective is to develop
-                  a robust, accurate model that can predict house prices in
-                  Ames, Iowa, and potentially be adapted to other real estate
-                  markets. (Python, Pandas, NumPy, Scikit-learn, Matplotlib).
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6 col-lg-6">
-            <div class="card h-100">
-              <div class="card-header">
-                <h5 class="card-title">
-                  Exploratory Data Analysis-MovieLens Dataset
-                </h5>
-              </div>
-              <div class="card-body">
-                <p>
-                  An exploratory data analysis (EDA) and visualization project
-                  using the MovieLens dataset to uncover insights into movie
-                  ratings, and user preferences.
-                </p>
-              </div>
-              <div class="card-footer d-flex justify-content-center">
-                <a
-                  href="https://github.com/Khanz9664/Python-For-DataScience/tree/main/10.%20Exploratory%20Analysis%20and%20Visualization%20of%20MovieLens%20Dataset"
-                  target="_blank"
-                  class="btn btn-primary btn-sm"
-                  >View on GitHub</a
-                >
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6 col-lg-6">
-            <div class="card h-100">
-              <div class="card-body">
-                <p>
-                  This project involves performing Exploratory Data Analysis
-                  (EDA) and data visualization on the MovieLens dataset, which
-                  contains information about movies, ratings, genres, and users.
-                  The goal is to extract meaningful patterns, relationships, and
-                  trends from the dataset, such as the distribution of ratings,
-                  the most popular genres, and the preferences of users. Various
-                  visualization techniques will be used to present the insights
-                  effectively, enabling a deeper understanding of the data and
-                  how users interact with movies. (Python, Pandas, NumPy,
-                  Matplotlib, Seaborn, Plotly).
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Skills Section -->
-    <section id="skills" class="container py-5">
-      <h2 class="text-center mb-4">Skills</h2>
-      <div class="row g-4">
-        <div class="col-md-4">
-          <div class="card">
-            <div class="card-body">
-              <h5 class="card-title">Languages</h5>
-              <ul class="skill-list flush">
-                <li>Python</li>
-                <li>C/C++/C#</li>
-                <li>HTML/CSS/JavaScript</li>
-                <li>SQL</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="card">
-            <div class="card-body">
-              <h5 class="card-title">Libraries</h5>
-              <ul class="skill-list">
-                <li>Numpy/Pandas</li>
-                <li>Matplotlib/Seaborn</li>
-                <li>TensorFlow/Keras</li>
-                <li>Scikit-learn</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="card">
-            <div class="card-body">
-              <h5 class="card-title">Tools</h5>
-              <ul class="skill-list">
-                <li>Jupyter Notebook</li>
-                <li>VS Code</li>
-                <li>Git/GitHub</li>
-                <li>BigQuery</li>
-                <li>Looker</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact" class="bg-light py-5">
-      <div class="container text-center">
-        <h2>Contact Me</h2>
-        <p>Feel free to reach out through any of the platforms below!</p>
-        <div class="d-flex justify-content-center">
-          <a
-            href="mailto:shahid9664@gmail.com"
-            class="btn btn-outline-primary me-2"
-          >
-            <i class="fas fa-envelope"></i> Mail
-          </a>
-          <a
-            href="https://www.linkedin.com/in/shahid-ul-islam-13650998"
-            target="_blank"
-            class="btn btn-outline-secondary me-2"
-          >
-            <i class="fab fa-linkedin"></i> LinkedIn
-          </a>
-          <a
-            href="https://github.com/Khanz9664"
-            target="_blank"
-            class="btn btn-outline-dark"
-          >
-            <i class="fab fa-github"></i> GitHub
-          </a>
-        </div>
-      </div>
-    </section>
-
-    <footer class="bg-dark text-white py-3 text-center">
-      <p class="mb-0">
-        &copy; 2025 Shahid Ul Islam. Designed with
-        <span class="text-danger">❤️</span>
-      </p>
+    <footer>
+        <p>&copy; 2025 Shahid Ul Islam. Designed with <span class="heart-icon">❤️</span></p>
     </footer>
+    
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-  </body>
+</body>
 </html>
