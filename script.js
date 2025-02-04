@@ -70,62 +70,18 @@ document.addEventListener('DOMContentLoaded', () => {
     bar.style.setProperty('--progress', `${progress}%`);
     });
     
-    // Replace these with your Google Form IDs
-const FORM_ID = '1FAIpQLSel53IKEq0TZDAX8vwb2n1_hZvPh6FFpVwJe-z6uAKJqI0FAA';
-const NAME_ENTRY_ID = 'entry.2005620554';  
-const EMAIL_ENTRY_ID = 'entry.1045781291'; 
-const MESSAGE_ENTRY_ID = 'entry.839337160'; 
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbwYYD90tXcX1EmV3HxohFM3fIYhXgMFQJwceLDXt8A7e9j3u1xleqp0vmxdUABN2SNx/exec'
+  const form = document.forms['submit-to-google-sheet']
 
-const form = document.getElementById('custom-contact-form');
-const formStatus = document.querySelector('.form-status');
-
-form.addEventListener('submit', async (e) => {
-    e.preventDefault();
-    
-    const submitButton = form.querySelector('button');
-    const originalButtonText = submitButton.innerHTML;
-    
-    // Show loading state
-    submitButton.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Sending...';
-    submitButton.disabled = true;
-
-    const formData = {
-        [NAME_ENTRY_ID]: form.name.value,
-        [EMAIL_ENTRY_ID]: form.email.value,
-        [MESSAGE_ENTRY_ID]: form.message.value
-    };
-
-    try {
-        const response = await fetch(`https://docs.google.com/forms/d/e/${FORM_ID}/formResponse`, {
-            method: 'POST',
-            mode: 'no-cors',
-            headers: {
-                'Content-Type': 'application/x-www-form-urlencoded'
-            },
-            body: new URLSearchParams(formData).toString()
-        });
-
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => {msg.innerText="Message Sent"
+        setTimeout(function(){msg.innerHTML=""},4000);
         form.reset();
-        showStatus('Message sent successfully!', 'success');
-    } catch (error) {
-        showStatus('Error sending message. Please try again.', 'error');
-    } finally {
-        submitButton.innerHTML = originalButtonText;
-        submitButton.disabled = false;
-    }
-});
-
-function showStatus(message, type) {
-    formStatus.textContent = message;
-    formStatus.className = `form-status ${type}`;
-    setTimeout(() => {
-        formStatus.style.opacity = '0';
-        setTimeout(() => {
-            formStatus.className = 'form-status';
-            formStatus.style.opacity = '1';
-        }, 300);
-    }, 3000);
-}
+  })
+      .catch(error => console.error('Error!', error.message))
+  })
 
 // Smooth scroll to top
 document.querySelector('.back-to-top').addEventListener('click', (e) => {
