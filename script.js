@@ -72,9 +72,9 @@ document.addEventListener('DOMContentLoaded', () => {
     
     // Replace these with your Google Form IDs
 const FORM_ID = '1FAIpQLSel53IKEq0TZDAX8vwb2n1_hZvPh6FFpVwJe-z6uAKJqI0FAA';
-const NAME_ENTRY_ID = 'entry.1234567890';  // Replace with actual entry ID
-const EMAIL_ENTRY_ID = 'entry.0987654321'; // Replace with actual entry ID
-const MESSAGE_ENTRY_ID = 'entry.1122334455'; // Replace with actual entry ID
+const NAME_ENTRY_ID = 'entry.2005620554';  
+const EMAIL_ENTRY_ID = 'entry.1045781291'; 
+const MESSAGE_ENTRY_ID = 'entry.839337160'; 
 
 const form = document.getElementById('custom-contact-form');
 const formStatus = document.querySelector('.form-status');
