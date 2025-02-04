@@ -4,281 +4,524 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Shahid Ul Islam | Portfolio</title>
+    <script src="https://kit.fontawesome.com/your-kit-code.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
     <script defer src="script.js"></script>
 </head>
 <body>
 
     <div class="top-bar">
-        <p>Shahid Ul Islam | Portfolio</p>
+    <div class="logo">
+        <span class="logo-icon">🧠</span>
+        <span class="logo-text">Portfolio</span>
     </div>
     
-    <header id="home">
-        <nav class="container">
-            <ul class="nav-links">
-                <li><a href="#about">About Me</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
+    <nav class="nav-container">
+        <ul class="nav-links">
+            <li><a href="#about" class="nav-link"><span>01.</span> About</a></li>
+            <li><a href="#projects" class="nav-link"><span>02.</span> Projects</a></li>
+            <li><a href="#skills" class="nav-link"><span>03.</span> Skills</a></li>
+            <li><a href="#contact" class="nav-link"><span>04.</span> Contact</a></li>
+        </ul>
+        <div class="menu-toggle">
+            <div class="hamburger"></div>
+        </div>
+    </nav>
+</div>
     
-        <div class="hero">
-            <h2>Hi, I'm Shahid Ul Islam</h2>
-            <p>
-                An Aspiring Data Scientist on a mission to transform data into meaningful insights and intelligent solutions. Fueled by a passion for AI, Machine Learning, and Data Analysis, I thrive on solving real-world challenges with innovative, data-driven strategies. Let's uncover the stories hidden in data and create impactful solutions together!
-            </p>
-            <div class="hero-buttons">
-                <a href="#projects" class="btn">My Work</a>
-                <a href="resume.pdf" class="btn" download>Resume</a>
-                <a href="#contact" class="btn">Contact Me</a>
+   <header id="home">
+    <div class="hero">
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1 class="hero-title">
+                    <span class="gradient-text">Shahid Ul Islam</span>
+                    <span class="tagline">Data Scientist & AI Developer</span>
+                </h1>
+                <p class="hero-description">
+                    Transforming Raw Data into Intelligent Solutions through 
+                    <span class="highlight">Machine Learning</span>  & 
+                    <span class="highlight">Advanced Analytics</span>
+                </p>
+                <div class="cta-container">
+                    <a href="#projects" class="cta-button">
+                        <span>Explore My Work</span>
+                        <i class="fas fa-arrow-down"></i>
+                    </a>
+                    <a href="img/resume.pdf" class="cta-button">
+                        <span>Resume</span>
+                        <i class="fas fa-download"></i>
+                    </a>
+                    <div class="social-links">
+                        <a href="https://www.linkedin.com/in/shahid-ul-islam-13650998" target="_blank" class="social-icon">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="https://github.com/Khanz9664" target="_blank" class="social-icon">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://x.com/Shaddy9664" target="_blank" class="social-icon">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="data-points">
+                    <div class="data-node node-1"></div>
+                    <div class="data-node node-2"></div>
+                    <div class="data-node node-3"></div>
+                    <div class="connecting-line"></div>
+                </div>
+                <div class="graphic-element"></div>
             </div>
         </div>
-    </header>
+    </div>
+</header>
     
     <main>
         <section id="about" class="container about-section">
-            <h2>About Me</h2>
-            <div class="about-content">
-                <div class="about-image">
-                    <img src="shahid.png" alt="Shahid Ul Islam" class="profile-image">
+    <h2 class="section-title">About Me</h2>
+    <div class="about-content">
+        <div class="about-image">
+            <div class="image-frame">
+                <img src="img/shahid.png" alt="Shahid Ul Islam" class="profile-image">
+                <div class="image-accent"></div>
+            </div>
+            <div class="tech-stack">
+                <div class="tech-item">AI</div>
+                <div class="tech-item">ML</div>
+                <div class="tech-item">Data Science</div>
+            </div>
+        </div>
+        <div class="about-text">
+            <p class="highlight">A Computer Science student fueled by a passion for <span class="accent">Artificial Intelligence</span>, <span class="accent">Machine Learning</span>, and <span class="accent">Data Science</span>.</p>
+            <div class="about-card">
+                <p>I thrive on crafting innovative solutions that bridge complex problems with real-world applications. My expertise spans:</p>
+                <ul class="expertise-list">
+                    <li>Predictive Analytics & Modeling</li>
+                    <li>Natural Language Processing</li>
+                    <li>Deep Learning Architectures</li>
+                    <li>Data Visualization & Storytelling</li>
+                </ul>
+            </div>
+            <div class="achievement-grid">
+                <div class="achievement-item">
+                    <div class="achievement-icon">📈</div>
+                    <h3>Data-Driven Solutions</h3>
+                    <p>Transforming raw data into actionable insights</p>
                 </div>
-                <div class="about-text">
-                    <p>A Computer Science student fueled by a passion for Artificial Intelligence, Machine Learning, and Data Science. I thrive on crafting innovative solutions that bridge the gap between complex problems and real-world applications. From predictive analytics to natural language processing and deep learning, I love exploring the frontiers of cutting-edge technology.</p>
-                    <p>My journey so far has been an exciting blend of learning, building, and innovating. I've dived deep into diverse AI and Data Science applications—creating predictive models, building conversational AI, and unraveling insights from complex datasets. With every project, I aim to push boundaries and deliver impactful results.</p>
-                    <p>I’m driven by the excitement of tackling new challenges—whether it's solving complex problems or shaping the future through transformative AI-powered innovations. Join me on this journey where technology meets creativity, and together, let's unlock endless possibilities!</p>
+                <div class="achievement-item">
+                    <div class="achievement-icon">🤖</div>
+                    <h3>AI Innovation</h3>
+                    <p>Building intelligent systems that learn and adapt</p>
                 </div>
             </div>
-        </section>
+        </div>
+    </div>
+</section>
         
 
-        <section id="projects" class="container">
-            
-            <div class="projects-grid">
-                <h2>Projects</h2>
-                <div class="project-item">
-                    <div class="project-card">
-                        <div class="card-header">
-                            <h3>Medicine Review Categorization</h3>
-                        </div>
-                        <div class="card-body">
-                            <p>A machine learning-based web app that categorizes medicine reviews using uses, side effects, and manufacturer details.</p>
-                            
-                            
-                            <!-- Full project description -->
-                            <div class="collapse" id="description1">
-                                <p>Developed a machine learning-based web application to categorize medicine reviews into predefined classes (e.g., Positive, Negative, Neutral) based on user-provided inputs such as the medicine's uses, side effects, and manufacturer. The application provides valuable insights for pharmaceutical companies, healthcare professionals, and patients to analyze feedback effectively. (Python, Streamlit, Scikit-learn, Joblib, TF-IDF, Sparse Matrices).</p>
-                            </div>
-                        </div>
-                        <div class="card-footer">
-                            <button class="btn btn-link" type="button" data-bs-toggle="collapse" data-bs-target="#description1" aria-expanded="false" aria-controls="description1" id="toggleButton">
-                                Description
-                            </button>
-                            <a href="https://github.com/Khanz9664/Medicine-Review-Categorization" target="_blank" class="project-link">View on GitHub</a>
-                        </div>
-                    </div>
-              
-                    <div class="project-card">
-                        <div class="card-header">
-                            <h3>Early Breast Cancer Prediction</h3>
-                        </div>
-                        <div class="card-body">
-                            <p>A Machine Learning predictive model that assists in the early diagnosis of Breast Cancer based on a dataset of medical features.</p>
-                            
-                            
-                            <!-- Full project description -->
-                            <div class="collapse" id="description2">
-                                <p>This project involves developing a machine learning model to predict whether a given tumor is malignant or benign based on input features. By leveraging publicly available datasets, such as the Breast Cancer Wisconsin (Diagnostic) Dataset, the goal is to assist healthcare professionals in early detection and diagnosis of breast cancer, potentially improving treatment outcomes and saving lives. (Python, NumPy, Pandas, Scikit-learn, Matplotlib, Seaborn, XGBoost, LightGBM).</p>
-                            </div>
-                        </div>
-                        <div class="card-footer">
-                            <button class="btn btn-link" type="button" data-bs-toggle="collapse" data-bs-target="#description2" aria-expanded="false" aria-controls="description2">
-                                Description
-                            </button>
-                            <a href="https://github.com/Khanz9664/Breast-Cancer-Prediction" target="_blank" class="project-link">View on GitHub</a>
-                        </div>
-                    </div>
-
-                    <div class="project-card">
-                        <div class="card-header">
-                            <h3>Chatbot - Movie Dialogs Dataset</h3>
-                        </div>
-                        <div class="card-body">
-                            <p>A conversational chatbot trained on the Cornell Movie Dialogs dataset to simulate human-like interactions.</p>
-                            
-                            
-                            
-                            <!-- Full project description -->
-                            <div class="collapse" id="description3">
-                                <p>This project involves creating an intelligent conversational chatbot using the Cornell Movie Dialogs dataset. The chatbot is designed to simulate human-like conversations by leveraging Natural Language Processing (NLP) techniques and sequence-to-sequence models. The Cornell dataset, rich in diverse movie dialogues, provides a wide range of conversational contexts, making the chatbot capable of responding to varied inputs with contextual relevance. (Python, NumPy, Pandas, NLTK, TensorFlow, Tkinter).</p>
-                            </div>
-                        </div>
-                        <div class="card-footer">
-                            <button class="btn btn-link" type="button" data-bs-toggle="collapse" data-bs-target="#description3" aria-expanded="false" aria-controls="description3">
-                                Description
-                            </button>
-                            <a href="https://github.com/Khanz9664/chatbot" target="_blank" class="project-link">View on GitHub</a>
-                        </div>
-                    </div>
-                
-                    <div class="project-card">
-                        <div class="card-header">
-                            <h3>Criminal Records Management</h3>
-                        </div>
-                        <div class="card-body">
-                            <p>A secure and efficient system for managing and tracking criminal records, enabling quick access to information for law enforcement agencies.</p>
-                            
-                            
-                            <!-- Full project description -->
-                            <div class="collapse" id="description4">
-                                <p>The Criminal Records Management System (CRMS) is a comprehensive application designed to store, retrieve, and manage criminal records efficiently. This system is intended for law enforcement agencies, allowing authorized personnel to securely access and update records of individuals involved in criminal activities. By digitizing and organizing criminal data, the CRMS helps reduce manual paperwork, ensures easy retrieval of information, and improves the overall management and security of sensitive records. (HTML, CSS, PHP, SQL).</p>
-                            </div>
-                        </div>
-                        <div class="card-footer">
-                            <button class="btn btn-link" type="button" data-bs-toggle="collapse" data-bs-target="#description4" aria-expanded="false" aria-controls="description4">
-                                Description
-                            </button>
-                            <a href="https://github.com/Khanz9664/criminal-records-system" target="_blank" class="project-link">View on GitHub</a>
-                        </div>
-                    </div>
-               
-                    <div class="project-card">
-                        <div class="card-header">
-                            <h3>House Price Prediction</h3>
-                        </div>
-                        <div class="card-body">
-                            <p>A predictive model to estimate house prices based on various features of properties using the Ames Housing dataset.</p>
-                            
-                            
-                            <!-- Full project description -->
-                            <div class="collapse" id="description5">
-                                <p>The House Price Prediction project aims to build a machine learning model that predicts house prices based on various features such as the size of the house, number of rooms, neighborhood, and more, using the Ames Housing dataset. This dataset, which includes 79 explanatory variables describing the characteristics of residential homes, serves as the foundation for training the model. The objective is to develop a robust, accurate model that can predict house prices in Ames, Iowa, and potentially be adapted to other real estate markets. (Python, Pandas, NumPy, Scikit-learn, Matplotlib).</p>
-                            </div>
-                        </div>
-                        <div class="card-footer">
-                            <button class="btn btn-link" type="button" data-bs-toggle="collapse" data-bs-target="#description5" aria-expanded="false" aria-controls="description5">
-                                Description
-                            </button>
-                            <a href="https://github.com/Khanz9664/House-Price-Prediction" target="_blank" class="project-link">View on GitHub</a>
-                        </div>
-                    </div>
-                
-                    <div class="project-card">
-                        <div class="card-header">
-                            <h3>Exploratory Data Analysis-MovieLens Dataset</h3>
-                        </div>
-                        <div class="card-body">
-                            <p>An exploratory data analysis (EDA) and visualization project using the MovieLens dataset to uncover insights into movie ratings, and user preferences.</p>
-                            
-                            
-                            <div class="collapse" id="description6">
-                                <p>This project involves performing Exploratory Data Analysis (EDA) and data visualization on the MovieLens dataset, which contains information about movies, ratings, genres, and users. The goal is to extract meaningful patterns, relationships, and trends from the dataset, such as the distribution of ratings, the most popular genres, and the preferences of users. Various visualization techniques will be used to present the insights effectively, enabling a deeper understanding of the data and how users interact with movies. (Python, Pandas, NumPy, Matplotlib, Seaborn, Plotly).</p>
-                            </div>
-                        </div>
-                        <div class="card-footer">
-                            <button class="btn btn-link" type="button" data-bs-toggle="collapse" data-bs-target="#description6" aria-expanded="false" aria-controls="description6">
-                                Description
-                            </button>
-                            <a href="https://github.com/Khanz9664/Python-For-DataScience/tree/main/10.%20Exploratory%20Analysis%20and%20Visualization%20of%20MovieLens%20Dataset" target="_blank" class="project-link">View on GitHub</a>
-                        </div>
+<section id="projects" class="container">
+    <div class="projects-header">
+        <h2 class="section-title">Featured Projects</h2>
+        <p class="section-subtitle">Data Science & Machine Learning Applications</p>
+    </div>
+    
+    <div class="projects-grid">
+        <!-- Project 1 -->
+        <article class="project-card">
+            <div class="project-content">
+                <div class="project-meta">
+                    <span class="project-number">01</span>
+                    <div class="project-tags">
+                        <span class="tag">Healthcare</span>
+                        <span class="tag">Predictive Modeling</span>
+                        <span class="tag">Scikit-learn</span>
                     </div>
                 </div>
-            </div>
-        </section>
-        <script>
-            // Add event listeners to all toggle buttons
-            document.querySelectorAll(".toggle-btn").forEach(button => {
-                const targetId = button.getAttribute("data-bs-target");
-                const collapseElement = document.querySelector(targetId);
-        
-                collapseElement.addEventListener("shown.bs.collapse", function () {
-                    button.textContent = "View Less";
-                });
-        
-                collapseElement.addEventListener("hidden.bs.collapse", function () {
-                    button.textContent = "View More";
-                });
-            });
-        </script>
-        
-        
-        
-        
-        
-        <section id="skills" class="container">
-            <h2>Skills</h2>
-            <div class="skills-grid">
-                <div class="skill-card">
-                    <h3>Languages</h3>
-                    <ul>
-                        <li>Python</li>
-                        <li>C/C++/C#</li>
-                        <li>HTML/CSS/JavaScript</li>
-                        <li>SQL</li>
-                    </ul>
-                </div>
-                <div class="skill-card">
-                    <h3>Libraries</h3>
-                    <ul>
-                        <li>Numpy/Pandas</li>
-                        <li>Matplotlib/Seaborn</li>
-                        <li>TensorFlow/Keras</li>
-                        <li>Scikit-learn</li>
-                    </ul>
-                </div>
-                <div class="skill-card">
-                    <h3>Tools</h3>
-                    <ul>
-                        <li>Jupyter Notebook</li>
-                        <li>VS Code</li>
-                        <li>Git/GitHub</li>
-                        <li>BigQuery</li>
-                        <li>Looker</li>
-                    </ul>
-                </div>
-            </div>
-        </section>
-        
-        
-
-        <section id="contact" class="container">
-            <h2>Contact Me</h2>
-            <p>Feel free to reach out through any of the platforms below!</p>
-            <div class="contact-info">
-                <div class="contact-item">
-                    <i class="fas fa-envelope"></i>
-                    <a href="mailto:shahid9664@gmail.com">Mail</a>
-                </div>
-                <div class="contact-item">
-                    <i class="fab fa-linkedin"></i>
-                    <a href="https://www.linkedin.com/in/shahid-ul-islam-13650998" target="_blank">LinkedIn</a>
-                </div>
-                <div class="contact-item">
+                <h3 class="project-title">Early Breast Cancer Prediction</h3>
+                <p class="project-description">Machine learning model for early detection of breast cancer using clinical data and feature importance analysis.</p>
+                <a href="https://github.com/Khanz9664/Breast-Cancer-Prediction" 
+                   class="project-link"
+                   target="_blank">
                     <i class="fab fa-github"></i>
-                    <a href="https://github.com/Khanz9664" target="_blank">GitHub</a>
+                    <span>View Repository</span>
+                </a>
+            </div>
+            <div class="project-image" style="background-image: url('img/bcncr.png')"></div>
+        </article>
+
+        <!-- Project  2-->
+        <article class="project-card">
+            <div class="project-content">
+                <div class="project-meta">
+                    <span class="project-number">02</span>
+                    <div class="project-tags">
+                        <span class="tag">NLP</span>
+                        <span class="tag">Classification</span>
+                        <span class="tag">Python</span>
+                    </div>
                 </div>
-                <div class="contact-item">
-                    <i class="fab fa-whatsapp"></i>
-                    <a href="https://wa.me/+917780858125" target="_blank">WhatsApp</a>
+                <h3 class="project-title">Medicine Review Categorization</h3>
+                <p class="project-description">Text classification system analyzing pharmaceutical reviews using advanced NLP techniques and machine learning models.</p>
+                <a href="https://github.com/Khanz9664/Medicine-Review-Categorization" 
+                   class="project-link"
+                   target="_blank">
+                    <i class="fab fa-github"></i>
+                    <span>View Repository</span>
+                </a>
+            </div>
+            <div class="project-image" style="background-image: url('img/meds.png')"></div>
+        </article>
+
+        <!-- Project 3 -->
+        <article class="project-card">
+            <div class="project-content">
+                <div class="project-meta">
+                    <span class="project-number">03</span>
+                    <div class="project-tags">
+                        <span class="tag">Slaes Analysis</span>
+                        <span class="tag">Dash</span>
+                        <span class="tag">Plotly</span>
+                    </div>
                 </div>
-                <div class="contact-item">
-                    <i class="fab fa-instagram"></i>
-                    <a href="https://instagram.com/shaddy9664" target="_blank">Instagram</a>
+                <h3 class="project-title">Apple Sales Analysis & Dashboard 2024</h3>
+                <p class="project-description">Performed Comprehensive data analysis and Built an interactive dashboard to explore Apple Sales 2024.</p>
+                <a href="https://github.com/Khanz9664/Comprehensive-Data-Analysis-Visualization-of-Apple-Product-Sales" 
+                   class="project-link"
+                   target="_blank">
+                    <i class="fab fa-github"></i>
+                    <span>View Repository</span>
+                </a>
+            </div>
+            <div class="project-image" style="background-image: url('img/apple.png')"></div>
+        </article>
+
+        <!-- Project 4 -->
+        <article class="project-card">
+            <div class="project-content">
+                <div class="project-meta">
+                    <span class="project-number">04</span>
+                    <div class="project-tags">
+                        <span class="tag">Database</span>
+                        <span class="tag">CRUD</span>
+                        <span class="tag">SQL</span>
+                    </div>
+                </div>
+                <h3 class="project-title">Criminal Records Management</h3>
+                <p class="project-description">Full-stack system for managing criminal records with secure database operations and user authentication.</p>
+                <a href="https://github.com/Khanz9664/criminal-records-system" 
+                   class="project-link"
+                   target="_blank">
+                    <i class="fab fa-github"></i>
+                    <span>View Repository</span>
+                </a>
+            </div>
+            <div class="project-image" style="background-image: url('img/crms.png')"></div>
+        </article>
+
+        <!-- Project 5 -->
+        <article class="project-card">
+            <div class="project-content">
+                <div class="project-meta">
+                    <span class="project-number">05</span>
+                    <div class="project-tags">
+                        <span class="tag">Regression</span>
+                        <span class="tag">EDA</span>
+                        <span class="tag">Pandas</span>
+                    </div>
+                </div>
+                <h3 class="project-title">House Price Prediction</h3>
+                <p class="project-description">Real estate price prediction model using feature engineering and regression algorithms with comprehensive EDA.</p>
+                <a href="https://github.com/Khanz9664/House-Price-Prediction" 
+                   class="project-link"
+                   target="_blank">
+                    <i class="fab fa-github"></i>
+                    <span>View Repository</span>
+                </a>
+            </div>
+            <div class="project-image" style="background-image: url('img/hpp.png')"></div>
+        </article>
+
+        <!-- Project 6 -->
+        <article class="project-card">
+            <div class="project-content">
+                <div class="project-meta">
+                    <span class="project-number">06</span>
+                    <div class="project-tags">
+                        <span class="tag">Data Analysis</span>
+                        <span class="tag">Visualization</span>
+                        <span class="tag">Matplotlib</span>
+                    </div>
+                </div>
+                <h3 class="project-title">EDA - MovieLens Dataset</h3>
+                <p class="project-description">Comprehensive exploratory analysis of movie ratings data with interactive visualizations and insights generation.</p>
+                <a href="https://github.com/Khanz9664/Python-For-DataScience/tree/main/10.%20Exploratory%20Analysis%20and%20Visualization%20of%20MovieLens%20Dataset" 
+                   class="project-link"
+                   target="_blank">
+                    <i class="fab fa-github"></i>
+                    <span>View Repository</span>
+                </a>
+            </div>
+            <div class="project-image" style="background-image: url('img/eda.png')"></div>
+        </article>
+    </div>
+</section>
+        
+<section id="skills" class="container">
+    <div class="skills-header">
+        <h2 class="section-title">Technical Arsenal</h2>
+        <p class="section-subtitle">Tools & Technologies Powering My Solutions</p>
+    </div>
+    
+    <div class="skills-grid">
+        <!-- Languages Card -->
+        <article class="skill-card">
+            <div class="skill-header">
+                <i class="fas fa-code skill-icon"></i>
+                <h3>Development Languages</h3>
+            </div>
+            <div class="skill-items">
+                <div class="skill-item">
+                    <span class="skill-name">Python</span>
+                    <div class="skill-bar" data-progress="90"></div>
+                </div>
+                <div class="skill-item">
+                    <span class="skill-name">C/C++/C#</span>
+                    <div class="skill-bar" data-progress="85"></div>
+                </div>
+                <div class="skill-item">
+                    <span class="skill-name">HTML/CSS</span>
+                    <div class="skill-bar" data-progress="80"></div>
+                </div>
+                <div class="skill-item">
+                    <span class="skill-name">JavaScript</span>
+                    <div class="skill-bar" data-progress="70"></div>
+                </div>
+                <div class="skill-item">
+                    <span class="skill-name">SQL</span>
+                    <div class="skill-bar" data-progress="85"></div>
                 </div>
             </div>
-        </section>
+        </article>
+
+        <!-- Libraries Card -->
+        <article class="skill-card">
+            <div class="skill-header">
+                <i class="fas fa-chart-line skill-icon"></i>
+                <h3>Data Science Stack</h3>
+            </div>
+            <div class="skill-items">
+                <div class="skill-item">
+                    <span class="skill-name">Pandas/Numpy</span>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Data Manipulation</span>
+                        <span class="skill-tag">Analysis</span>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <span class="skill-name">TensorFlow/Keras</span>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Deep Learning</span>
+                        <span class="skill-tag">Neural Networks</span>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <span class="skill-name">Scikit-learn</span>
+                    <div class="skill-tags">
+                        <span class="skill-tag">ML Algorithms</span>
+                        <span class="skill-tag">Modeling</span>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <span class="skill-name">Matplotlib/Seaborn</span>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Data Viz</span>
+                        <span class="skill-tag">Reporting</span>
+                    </div>
+                </div>
+            </div>
+        </article>
+
+        <!-- Tools Card -->
+        <article class="skill-card">
+            <div class="skill-header">
+                <i class="fas fa-tools skill-icon"></i>
+                <h3>Development Ecosystem</h3>
+            </div>
+            <div class="skill-items">
+                <div class="skill-item">
+                    <span class="skill-name">Jupyter</span>
+                    <div class="skill-desc">Interactive computing & rapid prototyping</div>
+                </div>
+                <div class="skill-item">
+                    <span class="skill-name">Git/GitHub</span>
+                    <div class="skill-desc">Version control & collaborative development</div>
+                </div>
+                <div class="skill-item">
+                    <span class="skill-name">BigQuery</span>
+                    <div class="skill-desc">Large-scale data analysis & processing</div>
+                </div>
+                <div class="skill-item">
+                    <span class="skill-name">Looker</span>
+                    <div class="skill-desc">Business intelligence & analytics</div>
+                </div>
+            </div>
+        </article>
+    </div>
+</section>
+        
+        
+
+<section id="contact" class="contact-section">
+    <div class="contact-container">
+        <div class="contact-header">
+            <h2 class="section-title">Let's Connect</h2>
+            <p class="section-subtitle">Have a project in mind or want to discuss data solutions?<br>Let's create something amazing together.</p>
+        </div>
+
+        <div class="contact-grid">
+            <!-- Contact Form -->
+            <div class="contact-form-wrapper">
+                <form id="custom-contact-form" class="contact-form">
+                    <div class="form-group floating-label">
+                        <input type="text" id="name" name="name" required>
+                        <label for="name">Your Name</label>
+                        <div class="underline"></div>
+                    </div>
+
+                    <div class="form-group floating-label">
+                        <input type="email" id="email" name="email" required>
+                        <label for="email">Email Address</label>
+                        <div class="underline"></div>
+                    </div>
+
+                    <div class="form-group floating-label">
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                        <label for="message">Your Message</label>
+                        <div class="underline"></div>
+                    </div>
+
+                    <button type="submit" class="submit-button">
+                        <span>Send Message</span>
+                        <div class="button-icon">
+                            <i class="fas fa-paper-plane"></i>
+                        </div>
+                    </button>
+                </form>
+                <div class="form-status"></div>
+            </div>
+
+            <!-- Contact Channels -->
+            <div class="contact-channels">
+                <div class="channel-group">
+                    <h3 class="channel-group-title">Direct Communication</h3>
+                    <div class="channel-card email-channel">
+                        <div class="channel-icon">
+                            <i class="fas fa-envelope-open-text"></i>
+                        </div>
+                        <div class="channel-content">
+                            <h4>Email Me</h4>
+                            <p>For formal inquiries and project discussions</p>
+                            <a href="mailto:shahid9664@gmail.com" class="channel-link">
+                                shahid9664@gmail.com
+                                <i class="fas fa-external-link-alt"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="channel-card whatsapp-channel">
+                        <div class="channel-icon">
+                            <i class="fab fa-whatsapp"></i>
+                        </div>
+                        <div class="channel-content">
+                            <h4>WhatsApp Chat</h4>
+                            <p>Quick questions and instant messaging</p>
+                            <a href="https://wa.me/+917780858125" class="channel-link">
+                                +91 77808 58125
+                                <i class="fas fa-external-link-alt"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="channel-group">
+                    <h3 class="channel-group-title">Professional Networks</h3>
+                    <div class="channel-card linkedin-channel">
+                        <div class="channel-icon">
+                            <i class="fab fa-linkedin"></i>
+                        </div>
+                        <div class="channel-content">
+                            <h4>LinkedIn Profile</h4>
+                            <p>Connect for professional opportunities</p>
+                            <a href="https://linkedin.com/in/shahid-ul-islam-13650998" class="channel-link">
+                                View Profile
+                                <i class="fas fa-external-link-alt"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="channel-card github-channel">
+                        <div class="channel-icon">
+                            <i class="fab fa-github"></i>
+                        </div>
+                        <div class="channel-content">
+                            <h4>GitHub Repos</h4>
+                            <p>Explore my projects and contributions</p>
+                            <a href="https://github.com/Khanz9664" class="channel-link">
+                                Visit GitHub
+                                <i class="fas fa-external-link-alt"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
                
         
     </main>
 
-    <footer>
-        <p>&copy; 2025 Shahid Ul Islam. Designed with <span class="heart-icon">❤️</span></p>
-    </footer>
-    
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+ <footer class="site-footer">
+    <div class="footer-content">
+        <div class="footer-main">
+            <p class="copyright">&copy; 2025 Shahid Ul Islam 
+                <span class="separator">|</span> 
+                <span class="footer-meta">Data Scientist & AI Developer</span>
+            </p>
+            <div class="footer-links">
+                <a href="#home" class="back-to-top">
+                    <i class="fas fa-arrow-up"></i>
+                    Back to Top
+                </a>
+                <span class="separator">|</span>
+                <div class="social-links">
+                    <a href="https://github.com/Khanz9664" target="_blank" class="social-link">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://linkedin.com/in/shahid-ul-islam-13650998" target="_blank" class="social-link">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="mailto:shahid9664@gmail.com" class="social-link">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <p class="made-with">
+            Crafted with 
+            <span class="heart-icon">❤️</span> 
+            and 
+            <span class="tech-stack">
+                <i class="fas fa-code"></i>
+                <i class="fas fa-chart-line"></i>
+                <i class="fas fa-brain"></i>
+            </span>
+        </p>
+    </div>
+</footer>
     
 </body>
 </html>
