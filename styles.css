@@ -394,10 +394,11 @@ header {
     display: flex;
     gap: 1.5rem;
     margin-top: 2rem;
+    margin-left: 1rem;
 }
 
 .social-icon1 {
-    font-size: 1.5rem;
+    font-size: 2rem;
     color: var(--text-muted);
     transition: color 0.3s ease;
 }
