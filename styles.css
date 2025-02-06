@@ -278,7 +278,7 @@ body {
 header {
     position: relative;
     padding: 8rem 1rem 4rem;
-    background: linear-gradient(45deg, var(--darker-bg) 80%, var(--dark-bg) 70%);
+    background: url('img/background.svg') no-repeat center center/cover;
     overflow: hidden;
 }
 
@@ -346,33 +346,6 @@ header {
     transform: scaleX(1);
 }
 
-/* Animated Data Visualization Graphic */
-.data-points {
-    position: relative;
-    height: 400px;
-}
-
-.data-node {
-    position: absolute;
-    width: 20px;
-    height: 20px;
-    background: var(--primary-color);
-    border-radius: 50%;
-    animation: float 4s ease-in-out infinite;
-}
-
-.node-1 { top: 20%; left: 30%; animation-delay: 0s; }
-.node-2 { top: 50%; left: 60%; animation-delay: 0.5s; }
-.node-3 { top: 70%; left: 40%; animation-delay: 1s; }
-
-.connecting-line {
-    position: absolute;
-    height: 2px;
-    background: rgba(76, 175, 80, 0.3);
-    transform-origin: left;
-    animation: connect 6s linear infinite;
-}
-
 /* CTA Button */
 .cta-button {
     display: inline-flex;
@@ -393,7 +366,7 @@ header {
 .social-links1 {
     display: flex;
     gap: 1.5rem;
-    margin-top: 2rem;
+    margin-top: 1rem;
     margin-left: 1rem;
 }
 
@@ -408,20 +381,10 @@ header {
 }
 
 /* Animations */
-@keyframes text-gradient {
+@keyframes gradient-text {
     0% { background-position: 0% 50%; }
     50% { background-position: 100% 50%; }
     100% { background-position: 0% 50%; }
-}
-
-@keyframes float {
-    0%, 100% { transform: translateY(0); }
-    50% { transform: translateY(-20px); }
-}
-
-@keyframes connect {
-    0% { width: 0; transform: rotate(0deg); }
-    100% { width: 100%; transform: rotate(360deg); }
 }
 
 @media (max-width: 768px) {
@@ -440,10 +403,6 @@ header {
     
     .hero-description {
         font-size: 1.1rem;
-    }
-    
-    .data-points {
-        display: none;
     }
     
     .cta-container {
@@ -516,7 +475,7 @@ header {
     display: flex;
     justify-content: center;
     gap: 1rem;
-    margin-top: 1.5rem;
+    margin-top: 2rem;
 }
 
 .tech-item {
@@ -973,7 +932,7 @@ header {
     display: grid;
     grid-template-columns: 1.25fr 1fr;
     gap: 3rem;
-    margin-top: 3rem;
+    margin-top: 1rem;
 }
 
 /* Contact Form Styles */
