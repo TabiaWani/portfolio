@@ -18,11 +18,19 @@
 }
 
 body {
-    background-color: var(--dark-bg);
+    background: linear-gradient(135deg, #0c0b0b, #494239, #0c0b0b);
+    animation: gradientMotion 5s ease infinite;
     color: var(--text-color);
     line-height: 1.6;
     overflow-x: hidden;
 }
+
+@keyframes gradientMotion {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+  }
+  
 
 /* Update existing .top-bar styles */
 .top-bar {
@@ -412,7 +420,7 @@ header {
 
 /* About Section */
 .about-section {
-    padding: 4rem 2rem;
+    padding: 4rem 2rem 2rem 0rem;
     text-align: center;
 }
 
@@ -507,7 +515,7 @@ header {
 }
 
 .about-card {
-    background: var(--card-bg);
+    background: linear-gradient(135deg, #2d2d2d, #348b8b, #333333);
     padding: 1.5rem;
     border-radius: 10px;
     border: 1px solid rgba(46, 204, 113, 0.1);
@@ -544,7 +552,7 @@ header {
 }
 
 .achievement-item {
-    background: var(--card-bg);
+    background: linear-gradient(135deg, #2d2d2d, #4e4e4e, #2d8494);
     padding: 1.5rem;
     border-radius: 8px;
     text-align: center;
@@ -584,9 +592,169 @@ header {
     }
 }
 
+/*Education and Experience*/
+.timeline-wrapper {
+    position: relative;
+    padding: 1rem 1rem;
+  }
+  
+  .timeline-section {
+    position: relative;
+    padding: 2rem 0;
+  }
+  
+  .section-title1 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+    color: #505c5f;
+    position: relative;
+  }
+  
+  .timeline {
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .timeline::before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: 0;
+    width: 4px;
+    height: 100%;
+    background: #2ecc71;
+    transform: translateX(-50%);
+  }
+  
+  .timeline-card {
+    position: relative;
+    width: 46%;
+    padding: 1.5rem;
+    background: linear-gradient(135deg, #2d2d2d, #5c293c, #26308b);
+    border-radius: 12px;
+    box-shadow: 0 3px 20px rgba(0,0,0,0.1);
+    margin: 2rem 0;
+    transition: all 0.3s ease;
+  }
+  
+  .timeline-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(46, 204, 113, 0.15);
+  }
+  
+  .timeline-card.left {
+    left: 0;
+  }
+  
+  .timeline-card.right {
+    left: 54%;
+  }
+  
+  .card-icon {
+    position: absolute;
+    top: 1.5rem;
+    width: 50px;
+    height: 50px;
+    background: #2ecc71;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+  }
+  
+  .timeline-card.left .card-icon {
+    right: -70px;
+  }
+  
+  .timeline-card.right .card-icon {
+    left: -70px;
+  }
+  
+  .timeline-card::after {
+    content: '';
+    position: absolute;
+    top: 2rem;
+    width: 20px;
+    height: 20px;
+    background: #fff;
+    border: 4px solid #2ecc71;
+    border-radius: 50%;
+  }
+  
+  .timeline-card.left::after {
+    right: -50px;
+  }
+  
+  .timeline-card.right::after {
+    left: -50px;
+  }
+  
+  .timeline-date {
+    display: block;
+    color: #2ecc71;
+    font-weight: 600;
+    margin: 0.5rem 0;
+  }
+  
+  .description {
+    color: #151616;
+    line-height: 1.6;
+  }
+  
+  @media (max-width: 768px) {
+    .timeline::before {
+      left: 20px;
+    }
+    
+    .timeline-card {
+      width: 100%;
+      left: 0 !important;
+      margin: 2rem 0;
+    }
+    
+    .card-icon {
+      left: -70px !important;
+      right: auto !important;
+    }
+    
+    .timeline-card::after {
+      left: -50px !important;
+      right: auto !important;
+    }
+  }
+  
+  /* Animation */
+  @keyframes cardEntrance {
+    from {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .timeline-card {
+    animation: cardEntrance 0.6s ease-out;
+    animation-fill-mode: backwards;
+  }
+  
+  @keyframes lineGrowth {
+    from { height: 0 }
+    to { height: 100% }
+  }
+  
+  .timeline::before {
+    animation: lineGrowth 1s ease-out;
+  }
+
 /* Projects Section */
 #projects {
-    padding: 4rem 2rem;
+    padding: 1rem 2rem;
 }
 
 .projects-header {
@@ -625,7 +793,7 @@ header {
 }
 
 .project-card {
-    background: var(--card-bg);
+    background: linear-gradient(135deg, #727272, #2d2d2d, #c0c0c0);
     border-radius: 15px;
     overflow: hidden;
     position: relative;
@@ -777,7 +945,7 @@ header {
 }
 
 .skill-card {
-    background: var(--card-bg);
+    background: linear-gradient(135deg, #727272, #5e5e5e, #585858, #2c2c2c);
     border-radius: 15px;
     padding: 2rem;
     transition: transform 0.3s ease;
@@ -884,8 +1052,7 @@ header {
 
 /* Contact Section */
 .contact-section {
-    padding: 6rem 1.5rem;
-    background: var(--dark-bg);
+    padding: 3rem 1.5rem;
     position: relative;
     overflow: hidden;
 }
@@ -937,7 +1104,7 @@ header {
 
 /* Contact Form Styles */
 .contact-form-wrapper {
-    background: var(--card-bg);
+    background: linear-gradient(135deg, #2d2d2d, #4b4a86, #8d6042);
     padding: 2.5rem;
     border-radius: 20px;
     box-shadow: 0 15px 40px rgba(0,0,0,0.2);
@@ -1050,7 +1217,7 @@ header {
 }
 
 .channel-group {
-    background: var(--card-bg);
+    background: linear-gradient(45deg, #2d2d2d, #4b4a86, #8d6042);
     padding: 2rem;
     border-radius: 20px;
     box-shadow: 0 15px 40px rgba(0,0,0,0.2);
