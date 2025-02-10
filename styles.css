@@ -585,10 +585,17 @@ header {
     
     .expertise-list {
         grid-template-columns: 1fr;
+        padding-left: 1rem;
     }
     
     .achievement-grid {
         grid-template-columns: 1fr;
+        padding-left: 1rem;
+    }
+
+    .about-card {
+        padding-left: 1rem;
+        margin-left: 1rem;
     }
 }
 
