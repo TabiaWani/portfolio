@@ -73,15 +73,25 @@ document.addEventListener('DOMContentLoaded', () => {
     const scriptURL = 'https://script.google.com/macros/s/AKfycbwYYD90tXcX1EmV3HxohFM3fIYhXgMFQJwceLDXt8A7e9j3u1xleqp0vmxdUABN2SNx/exec'
   const form = document.forms['submit-to-google-sheet']
 
-  form.addEventListener('submit', e => {
-    e.preventDefault()
-    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-      .then(response => {msg.innerText="Message Sent"
-        setTimeout(function(){msg.innerHTML=""},4000);
-        form.reset();
-  })
-      .catch(error => console.error('Error!', error.message))
-  })
+ const msg = document.getElementById('msg');
+ 
+form.addEventListener('submit', e => {
+    e.preventDefault();
+    
+    // Show a sending message
+    msg.innerText = "Sending...";
+    
+    fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+        .then(response => {
+            msg.innerText = "Message Sent!";
+            setTimeout(() => { msg.innerText = ""; }, 4000);
+            form.reset();
+        })
+        .catch(error => {
+            msg.innerText = "Error! Please try again.";
+            console.error('Error!', error.message);
+        });
+});
 
 // Smooth scroll to top
 document.querySelector('.back-to-top').addEventListener('click', (e) => {
